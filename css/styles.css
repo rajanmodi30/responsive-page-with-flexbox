@@ -18,6 +18,29 @@ nav {
     justify-content: space-around;
 }
 
+img {
+    width: 100%;
+}
+
+.row {
+    list-style: none;
+    padding: 0.8em 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.col-bg {
+    width: 80%;
+}
+
+.col-sm {
+    width: 20%;
+}
+
+.row-vertical {
+    flex-direction: column;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -49,7 +72,7 @@ h1 {
     margin-bottom: 0.2rem;
 }
 
-p {
+nav p {
     color: #1792d2;
     font-size: 0.75rem;
     padding: 0;
@@ -64,6 +87,14 @@ p {
 .container {
     margin: 0 auto;
     width: 50%;
+}
+
+footer {
+    background-color: #143774;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1em;
+    color: #ffffff;
 }
 
 /* for all the tablets and mobiles */
