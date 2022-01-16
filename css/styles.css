@@ -1,0 +1,84 @@
+html,
+body {
+    font-family: "Lora", serif;
+    font-family: "Ubuntu", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+nav {
+    background: #f8f8f8;
+}
+
+.row-nav {
+    list-style: none;
+    padding: 0.8em 0px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    font-weight: bold;
+    padding: 1em;
+}
+
+a {
+    color: #707070;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #1792d2;
+}
+
+.active {
+    border-bottom: 2px solid #707070;
+}
+
+h1 {
+    font-family: "Lora", serif;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+}
+
+p {
+    color: #1792d2;
+    font-size: 0.75rem;
+    padding: 0;
+    margin: 0;
+}
+
+.header {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container {
+    margin: 0 auto;
+    width: 50%;
+}
+
+/* for all the tablets and mobiles */
+@media (max-width: 800px) {
+    nav ul {
+        list-style: none;
+        padding: 0;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .row-nav {
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
+}
