@@ -46,7 +46,7 @@ img {
 .row-vertical {
     margin-top: 1.8em;
     flex-direction: column;
-    border: 18px solid #EBEBEB;
+    border: 18px solid #ebebeb;
 }
 
 nav ul {
@@ -61,13 +61,27 @@ nav li {
     padding: 1em;
 }
 
-a {
+a :hover {
+    cursor: pointer;
+}
+
+nav a {
     color: #707070;
     text-decoration: none;
 }
 
-a:hover {
+nav a:hover {
     color: #1792d2;
+}
+
+.row a {
+    color: #1792d2;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.row a:hover {
+    color: #707070;
 }
 
 .active {
@@ -87,6 +101,14 @@ nav p {
     margin: 0;
 }
 
+.col-30 {
+    width: 35%;
+}
+
+.col-70 {
+    width: 65%;
+}
+
 .header {
     text-align: center;
     margin: 0 auto;
@@ -95,6 +117,7 @@ nav p {
 .container {
     margin: 0 auto;
     width: 80%;
+    max-width: 980;
 }
 
 h2 {
@@ -103,7 +126,11 @@ h2 {
 
 h3 {
     color: #143774;
-    font: normal normal normal 24px/28px Lora;
+    font: normal normal normal 1.3em Lora;
+}
+
+.col h3 {
+    margin-top: 0;
 }
 
 .dates {
@@ -141,14 +168,23 @@ footer {
     .row {
         justify-content: space-around;
         flex-direction: column;
-        text-align: center;
+        align-items: flex-start;
     }
+
 
     .col-bg {
         width: 100%;
     }
 
     .col-sm {
+        width: 100%;
+    }
+
+    .col-30 {
+        width: 100%;
+    }
+
+    .col-70 {
         width: 100%;
     }
 }
